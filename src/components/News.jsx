@@ -39,7 +39,7 @@ const NewsTicker = ({ newsItems = [] }) => {
           flexShrink: 0,
         }}
       >
-        SIMA GOLD BULLION
+        SIMA GOLD UPDATES
       </Typography>
 
       {/* SCROLL AREA */}
