@@ -242,8 +242,8 @@ const SpotRate = () => {
             SPOT RATE
           </Typography>
         </Box>
-        <MetalPanel title="SILVER" data={silverData} theme="silver" />
         <MetalPanel title="GOLD" data={goldData} theme="gold" />
+        <MetalPanel title="SILVER" data={silverData} theme="silver" />
       </Box>
     </Box>
   );
