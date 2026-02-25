@@ -53,6 +53,8 @@ const SystemClock = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 width: "100%",
+                marginBottom: "1.9vw",
+
             }}
         >
             {/* Time */}
@@ -62,7 +64,7 @@ const SystemClock = () => {
                     fontSize: {
                         xs: "22px",
                         lg: "2.5vw",
-                      },
+                    },
                     fontWeight: 600,
                     color: "#ffffff",
                 }}
@@ -77,7 +79,7 @@ const SystemClock = () => {
                     fontSize: {
                         xs: "16px",
                         lg: "1.8vw",
-                      },
+                    },
                     fontWeight: 500,
                     color: "#FFFFFF",
                     letterSpacing: "1px",
@@ -93,7 +95,7 @@ const SystemClock = () => {
                     fontSize: {
                         xs: "16px",
                         lg: "1.8vw",
-                      },
+                    },
                     fontWeight: 700,
                     letterSpacing: "1.2px",
                     color: "#FFFFFF",

@@ -185,7 +185,7 @@ function TvScreen() {
         <Grid
           item
           xs={12}
-          md={6}
+          md={7.5}
           display="flex"
           flexDirection="column"
           alignItems="center"
@@ -196,27 +196,28 @@ function TvScreen() {
               height: "auto",
               // width: "8vw",
               width: {
-                xs: "30vw",  
-                lg: "8vw",   
+                xs: "30vw",
+                lg: "10vw",
               },
-              marginBottom: "2vw",
+              marginBottom: "1vw",
             }}
           >
             <img src={MainLogo} alt="" className="object-contain w-full" />
           </Box>
 
           <SpotRate />
+          <PoweredByAurify />
+
         </Grid>
 
         {/* Side: SpotRate & Date Time */}
-        <Grid item md={6}
+        <Grid item md={4.5}
           xs={12}
         >
           <SystemClock />
 
           <CommodityTable commodities={commodities} />
           <WorldClock />
-          <PoweredByAurify />
         </Grid>
 
         <Grid

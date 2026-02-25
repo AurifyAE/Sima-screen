@@ -166,7 +166,7 @@ const CommodityTable = ({ commodities }) => {
               display: "grid",
               gridTemplateColumns: "1.4fr 0.8fr 0.8fr",
               alignItems: "end",
-              py: "0.7vw",
+              py: "1.1vw",
               px: "1.5vw",
 
             }}
@@ -176,7 +176,7 @@ const CommodityTable = ({ commodities }) => {
                 // fontSize: "1.24vw",
                 fontSize: {
                   xs: "16px",
-                  lg: "1.24vw",
+                  lg: "1.8vw",
                 },
                 fontWeight: 800,
                 color: "#FFFFFF",
@@ -196,7 +196,7 @@ const CommodityTable = ({ commodities }) => {
                   // fontSize: "1vw",
                   fontSize: {
                     xs: "12px",
-                    lg: "1vw",
+                    lg: "1.2vw",
                   },
                   fontWeight: 400,
                   color: "#FFFFFF",
@@ -212,7 +212,7 @@ const CommodityTable = ({ commodities }) => {
                 // fontSize: "1.18vw",
                 fontSize: {
                   xs: "14px",
-                  lg: "1.18vw",
+                  lg: "1.3vw",
                 },
                 color: "#FFFFFF",
                 textAlign: "start",
@@ -236,7 +236,7 @@ const CommodityTable = ({ commodities }) => {
                   // fontSize: "1.32vw",
                   fontSize: {
                     xs: "15px",
-                    lg: "1.32vw",
+                    lg: "1.5vw",
                   },
                   fontWeight: 600,
                   color: "#FFFFFF", // soft pink ASK

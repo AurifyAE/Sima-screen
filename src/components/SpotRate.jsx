@@ -76,8 +76,8 @@ const SpotRate = () => {
             xs: "10px",
             lg: "0.5vw",
           },
-          flex: 1,
-          width: "10vw",
+          flex: 0,
+          minWidth: "13.5vw",
         }}
       >
         <Typography
@@ -111,8 +111,9 @@ const SpotRate = () => {
             border: "0.2vw solid #fff",
             borderRadius: "0.6vw",
             px: "2vw",
-            minWidth: "14vw",
             textAlign: "center",
+            width: '100%',
+
           }}
         >
           <Typography
@@ -148,7 +149,7 @@ const SpotRate = () => {
           gap: "2vw ",
           display: "grid",
           alignItems: "center",
-          gridTemplateColumns: "1fr 1fr 1fr",
+          gridTemplateColumns: "1fr 1fr 1fr  ",
         }}
       >
         <Typography
@@ -156,18 +157,33 @@ const SpotRate = () => {
             // fontSize: "2vw",
             fontSize: {
               xs: "18px",
-              lg: "2vw",
+              lg: "1.7vw",
             },
             fontWeight: 700,
             color: "#fff",
-            width: "10vw",
-            // flex: "1",
+            width: "8vw",
+            flex: "0",
           }}
         >
           {title}
         </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            gap: {
+              xs: "10px",
+              lg: "1.5vw",
+            },
+            width: 'fit-content'
+          }}>
 
-        <PricePulse label="BID " value={data.bid} />
+
+
+          <PricePulse label="BID " value={data.bid} />
+          <PricePulse label="ASK " value={data.ask} />
+        </Box>
+
+
 
         <Box
           sx={{
@@ -176,19 +192,21 @@ const SpotRate = () => {
             // gap: "1vw",
             gap: {
               xs: "10px",
-              lg: "1w",
+              lg: "1vw",
             },
-            flex: "1",
+            flex: "0",
+            width: "14vw",
+
           }}
         >
-          {/* LOW */}
+
           <Box
             sx={{
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
               gap: "1vw",
-              flex: "1",
+              flex: "0",
             }}
           >
             <Typography
@@ -272,7 +290,7 @@ const SpotRate = () => {
             </Typography>
           </Box>
         </Box>
-      </Box>
+      </Box >
     );
   };
 
