@@ -2,9 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { Box, Typography } from "@mui/material";
 import { useSpotRate } from "../context/SpotRateContext";
 
-import goldImg from "/images/gold-biscut.png";
-import silverImg from "/images/silver-biscut.png";
-
 const SpotRate = () => {
   const { goldData, silverData } = useSpotRate();
 
@@ -74,13 +71,22 @@ const SpotRate = () => {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          gap: "0.5vw",
+          // gap: "0.5vw",
+          gap: {
+            xs: "10px",
+            lg: "0.5vw",
+          },
           flex: 1,
+          width: "10vw",
         }}
       >
         <Typography
           sx={{
-            fontSize: "2vw",
+            // fontSize: "2vw",
+            fontSize: {
+              xs: "18px",
+              lg: "2vw",
+            },
             fontWeight: 700,
             letterSpacing: "0.2vw",
             color: "#fff",
@@ -91,7 +97,13 @@ const SpotRate = () => {
         >
           {label}
 
-          <img src="/images/dlr-icon.png" />
+          <img
+            src="/images/dlr-icon.png"
+            width={{
+              xs: "30vw",
+              lg: "35vw",
+            }}
+          />
         </Typography>
 
         <Box
@@ -105,7 +117,11 @@ const SpotRate = () => {
         >
           <Typography
             sx={{
-              fontSize: "2.5vw",
+              // fontSize: "2.5vw",
+              fontSize: {
+                xs: "20px",
+                lg: "2.5vw",
+              },
               fontWeight: 800,
               color: "#fff",
             }}
@@ -124,7 +140,11 @@ const SpotRate = () => {
           border: "0.15vw solid #FFD700",
           borderRadius: "1.2vw",
           bgcolor: "#000",
-          p: "1vw ",
+          // p: "1vw ",
+          p: {
+            xs: "15px",
+            lg: "1vw",
+          },
           gap: "2vw ",
           display: "grid",
           alignItems: "center",
@@ -133,10 +153,15 @@ const SpotRate = () => {
       >
         <Typography
           sx={{
-            fontSize: "2vw",
+            // fontSize: "2vw",
+            fontSize: {
+              xs: "18px",
+              lg: "2vw",
+            },
             fontWeight: 700,
             color: "#fff",
             width: "10vw",
+            // flex: "1",
           }}
         >
           {title}
@@ -148,7 +173,12 @@ const SpotRate = () => {
           sx={{
             display: "flex",
             flexDirection: "column",
-            gap: "1vw",
+            // gap: "1vw",
+            gap: {
+              xs: "10px",
+              lg: "1w",
+            },
+            flex: "1",
           }}
         >
           {/* LOW */}
@@ -158,14 +188,31 @@ const SpotRate = () => {
               justifyContent: "space-between",
               alignItems: "center",
               gap: "1vw",
+              flex: "1",
             }}
           >
-            <Typography sx={{ color: "red", fontSize: "2vw", flex: "0" }}>
+            <Typography
+              sx={{
+                color: "red",
+
+                // fontSize: "2vw",
+
+                fontSize: {
+                  xs: "18px",
+                  lg: "2vw",
+                },
+                flex: "0",
+              }}
+            >
               ▼
             </Typography>
             <Typography
               sx={{
-                fontSize: "2vw",
+                // fontSize: "2vw",
+                fontSize: {
+                  xs: "18px",
+                  lg: "2vw",
+                },
                 fontWeight: 700,
                 bgcolor: "#FFFFFF",
                 borderRadius: "0.6vw",
@@ -189,12 +236,28 @@ const SpotRate = () => {
               gap: "1vw",
             }}
           >
-            <Typography sx={{ color: "green", fontSize: "2vw", flex: "0" }}>
+            <Typography
+              sx={{
+                color: "green",
+                //  fontSize: "2vw",
+
+                fontSize: {
+                  xs: "18px",
+                  lg: "2vw",
+                },
+                flex: "0",
+              }}
+            >
               ▲
             </Typography>
             <Typography
               sx={{
-                fontSize: "2vw",
+                // fontSize: "2vw",
+                fontSize: {
+                  xs: "18px",
+                  lg: "2vw",
+                },
+
                 fontWeight: 700,
                 bgcolor: "#FFFFFF",
                 borderRadius: "0.6vw",
@@ -203,7 +266,6 @@ const SpotRate = () => {
                 flex: "1",
 
                 py: "0.5vw",
-
               }}
             >
               {data.high}
@@ -215,13 +277,12 @@ const SpotRate = () => {
   };
 
   return (
-    <Box sx={{ p: "1.5vw 1vw", pt: '0' }}>
+    <Box sx={{ p: "1.5vw 1vw", pt: "0", width: "100%" }}>
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
           gap: "1.5vw",
-          mx: "auto",
         }}
       >
         <Box
@@ -234,7 +295,12 @@ const SpotRate = () => {
         >
           <Typography
             sx={{
-              fontSize: "1.5vw",
+              // fontSize: "1.5vw",
+
+              fontSize: {
+                xs: "18px",
+                lg: "1.5vw",
+              },
               fontWeight: 800,
               color: "#000",
             }}

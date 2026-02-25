@@ -58,7 +58,11 @@ const SystemClock = () => {
             {/* Time */}
             <Typography
                 sx={{
-                    fontSize: "2.5vw",
+                    // fontSize: "2.5vw",
+                    fontSize: {
+                        xs: "22px",
+                        lg: "2.5vw",
+                      },
                     fontWeight: 600,
                     color: "#ffffff",
                 }}
@@ -69,7 +73,11 @@ const SystemClock = () => {
             {/* Day */}
             <Typography
                 sx={{
-                    fontSize: "1.8vw",
+                    // fontSize: "1.8vw",
+                    fontSize: {
+                        xs: "16px",
+                        lg: "1.8vw",
+                      },
                     fontWeight: 500,
                     color: "#FFFFFF",
                     letterSpacing: "1px",
@@ -81,7 +89,11 @@ const SystemClock = () => {
             {/* Date */}
             <Typography
                 sx={{
-                    fontSize: "1.8vw",
+                    // fontSize: "1.8vw",
+                    fontSize: {
+                        xs: "16px",
+                        lg: "1.8vw",
+                      },
                     fontWeight: 700,
                     letterSpacing: "1.2px",
                     color: "#FFFFFF",

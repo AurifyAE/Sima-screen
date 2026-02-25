@@ -72,12 +72,24 @@ const WorldClockHorizontal = () => {
               alignItems: "center",
               flexDirection: "column",
               gap: "0.5vw",
-              fontSize: "1.2vw",
+              // fontSize: "1.2vw",
+              fontSize: {
+                xs: "16px",
+                lg: "1.2vw",
+              },
               fontWeight: 500,
               color: "#FFFFFF",
             }}
           >
-            <Box sx={{ width: "3vw" }}>
+            <Box
+              sx={{
+                // width: "3vw",
+                width: {
+                  xs: "40px",
+                  lg: "3vw",
+                },
+              }}
+            >
               <img
                 src={clock.flag}
                 alt={clock.label}
@@ -87,7 +99,16 @@ const WorldClockHorizontal = () => {
             {clock.label}
           </Typography>
 
-          <Typography sx={{ fontSize: "1.2vw", color: "#fff" }}>
+          <Typography
+            sx={{
+              // fontSize: "1.2vw",
+              fontSize: {
+                xs: "16px",
+                lg: "1.2vw",
+              },
+              color: "#fff",
+            }}
+          >
             {times[clock.key] || "--:-- AM"}
           </Typography>
         </Box>

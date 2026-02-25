@@ -85,12 +85,16 @@ const CommodityTable = ({ commodities }) => {
           px: "1.5vw",
           borderRadius: "0.5vw",
           alignItems: "end",
-          margin:'0.3vw'
+          margin: '0.3vw'
         }}
       >
         <Typography
           sx={{
-            fontSize: "1.2vw",
+            // fontSize: "1.2vw",
+            fontSize: {
+              xs: "16px",
+              lg: "1.2vw",
+            },
             fontWeight: 600,
             color: "#000000",
             letterSpacing: "0.04vw",
@@ -102,8 +106,11 @@ const CommodityTable = ({ commodities }) => {
 
         <Typography
           sx={{
-            fontSize: "1.2vw",
-            fontWeight: 600,
+            // fontSize: "1.2vw",
+            fontSize: {
+              xs: "16px",
+              lg: "1.2vw",
+            }, fontWeight: 600,
             color: "#000000",
             textAlign: "start",
           }}
@@ -125,7 +132,11 @@ const CommodityTable = ({ commodities }) => {
 
         <Typography
           sx={{
-            fontSize: "1.2vw",
+            // fontSize: "1.2vw",
+            fontSize: {
+              xs: "16px",
+              lg: "1.2vw",
+            },
             fontWeight: 600,
             color: "#000000",
             textAlign: "start",
@@ -162,20 +173,31 @@ const CommodityTable = ({ commodities }) => {
           >
             <Typography
               sx={{
-                fontSize: "1.24vw",
+                // fontSize: "1.24vw",
+                fontSize: {
+                  xs: "16px",
+                  lg: "1.24vw",
+                },
                 fontWeight: 800,
                 color: "#FFFFFF",
                 display: 'flex',
                 alignItems: 'center ',
                 justifyContent: 'start',
-                gap: '0.3vw'
+                gap: {
+                  xs: "7px",
+                  lg: "0.3vw",
+                },
 
               }}
             >
               {row.metal}
               <Typography
                 sx={{
-                  fontSize: "1vw",
+                  // fontSize: "1vw",
+                  fontSize: {
+                    xs: "12px",
+                    lg: "1vw",
+                  },
                   fontWeight: 400,
                   color: "#FFFFFF",
                   // mb:'-0.5vw'
@@ -187,7 +209,11 @@ const CommodityTable = ({ commodities }) => {
 
             <Typography
               sx={{
-                fontSize: "1.18vw",
+                // fontSize: "1.18vw",
+                fontSize: {
+                  xs: "14px",
+                  lg: "1.18vw",
+                },
                 color: "#FFFFFF",
                 textAlign: "start",
               }}
@@ -195,7 +221,7 @@ const CommodityTable = ({ commodities }) => {
               {row.unit}
             </Typography>
 
-         
+
 
             <Box
               sx={{
@@ -207,7 +233,11 @@ const CommodityTable = ({ commodities }) => {
             >
               <Typography
                 sx={{
-                  fontSize: "1.32vw",
+                  // fontSize: "1.32vw",
+                  fontSize: {
+                    xs: "15px",
+                    lg: "1.32vw",
+                  },
                   fontWeight: 600,
                   color: "#FFFFFF", // soft pink ASK
                 }}

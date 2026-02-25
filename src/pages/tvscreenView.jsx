@@ -181,46 +181,42 @@ function TvScreen() {
         position="relative"
         margin="0"
       >
-
-
-
-
-
         {/* Side: Commodity Table */}
         <Grid
           item
+          xs={12}
           md={6}
           display="flex"
           flexDirection="column"
           alignItems="center"
-          justifyContent='start'
+          justifyContent="start"
         >
           <Box
             sx={{
               height: "auto",
-              width: "8vw",
+              // width: "8vw",
+              width: {
+                xs: "30vw",  
+                lg: "8vw",   
+              },
               marginBottom: "2vw",
             }}
           >
-            <img
-              src={MainLogo}
-              alt=""
-              className="object-contain w-full"
-            />
+            <img src={MainLogo} alt="" className="object-contain w-full" />
           </Box>
 
           <SpotRate />
-
         </Grid>
 
         {/* Side: SpotRate & Date Time */}
-        <Grid item md={6}>
+        <Grid item md={6}
+          xs={12}
+        >
           <SystemClock />
 
           <CommodityTable commodities={commodities} />
           <WorldClock />
           <PoweredByAurify />
-
         </Grid>
 
         <Grid

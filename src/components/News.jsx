@@ -10,7 +10,11 @@ const NewsTicker = ({ newsItems = [] }) => {
     <Box
       sx={{
         width: "100%",
-        height: "3vw",
+        // height: "3vw",
+        height: {
+          xs: "35px",
+          lg: "3vw",
+        },
         display: "flex",
         alignItems: "center",
         overflow: "hidden",
@@ -26,7 +30,11 @@ const NewsTicker = ({ newsItems = [] }) => {
         sx={{
           color: "#000000",
           background: 'linear-gradient( 90deg, rgba(178, 129, 44, 1) 0%, rgba(244, 222, 98, 1) 28.00000011920929%, rgba(244, 226, 139, 1) 50.999999046325684%, rgba(244, 222, 98, 1) 70.99999785423279%, rgba(178, 129, 44, 1) 100%)',
-          fontSize: "1.2vw",
+          // fontSize: "1.2vw",
+          fontSize: {
+            xs: "16px",
+            lg: "1.2vw",
+          },
           fontWeight:'700',
           whiteSpace: "nowrap",
           padding: "0 3.5vw",
@@ -58,7 +66,11 @@ const NewsTicker = ({ newsItems = [] }) => {
               component="span"
               sx={{
                 color: "#e6e6e6",
-                fontSize: "1.3vw",
+                // fontSize: "1.3vw",
+                fontSize: {
+                  xs: "16px",
+                  lg: "1.3vw",
+                },
                 fontWeight: 500,
                 whiteSpace: "nowrap",
                 marginRight: "4vw",
